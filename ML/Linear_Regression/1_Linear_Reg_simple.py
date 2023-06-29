@@ -1,4 +1,4 @@
-# Example 1 (x+2 )
+# Example 1 (x*2 )
 
 import numpy as np
 from sklearn.linear_model import LinearRegression
