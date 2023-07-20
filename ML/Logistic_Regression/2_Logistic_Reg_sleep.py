@@ -10,7 +10,8 @@ X = np.array([[5, 7], [2, 8], [3, 5], [8, 3], [10, 6], [6, 9]])
 y = np.array([1, 0, 0, 1, 1, 1])
 
 # Split the data into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42)
 
 # Create a logistic regression model
 model = LogisticRegression()
@@ -24,6 +25,8 @@ y_pred = model.predict(X_test)
 # Calculate accuracy
 accuracy = accuracy_score(y_test, y_pred)
 print("Accuracy:", accuracy)
+print(X_test)
+print(model.predict([[6, 5]]))
 
 
 """
